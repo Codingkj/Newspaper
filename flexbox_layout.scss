@@ -1,0 +1,202 @@
+@import "./sass/bourbon/bourbon";
+@import "colors";
+@import "./sass/fonts";
+@import "images";
+@import "headers";
+@import "textformats";
+
+$border-defwidth: 1px;
+$borderstyle: solid;
+/*
+.floatleft .middle-img-top1, .overall-box-top2, .hairwand-pic{
+  float:left;
+  position:relative;
+}
+*/
+body {
+ font: $font-stack;
+  color: $primary-color;
+}
+button {@include button(pill);}
+textarea {
+  background-color: $backgroundone;
+  color:$primary-color;
+}
+fieldset
+{
+border: $border-defwidth $borderstyle $border-colour;
+width: 20em;
+}
+input
+{
+color: $textcolor3;
+background: $backgroundone;
+border: $border-defwidth $borderstyle $border-colour;
+line-height: 25px;
+}
+strong{
+  font-weight: $fontweightmax;
+  font-style: italic;
+  text-align:right;
+}
+span{
+  color:$pink;}
+/*
+
+@media (min-width: px) and (max-width: 1440px) {
+  .over-box-top {
+    width: 1050px;
+    height: 662px;
+    margin-left: 1px; }
+
+  .all-bottom {
+    width: 1050px;
+    height: 331px;
+    margin-left: 1px; } }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .over-box-top {
+    width: px;
+    height: px;
+    margin-left: 1px; }
+
+  .all-bottom {
+    width: px;
+    height: px;
+    margin-left: 1px; } }
+@media (min-width: 1px) and (max-width: 1px) {
+  .over-box-top {
+    width: px;
+    height: px;
+    margin-left: 1px; }
+
+*/
+.wholepage{  
+  flex-direction:row; 
+   display:flex;
+   flex-wrap:wrap;
+   width:100%;
+  /*height:1800px;*/
+}
+.banner{
+  width: 100%;
+ }
+.over-box-top {
+  /*height: 63%;*/
+  display:flex;
+  flex-wrap:wrap;
+}
+.trends-lines{ 
+  position: relative;
+top:20%;
+width:100%;
+}
+.overall-box-top1 {
+  width: 19%;
+  clear: left;
+  margin-right:1%;
+ }
+.Trends {
+  color: $pink;
+  font-weight:$middlefontweight;
+  font-size: 2.5vw;
+  font-style: italic;
+  width: 20%;
+  display:inline;
+}
+.category {
+  font-size: 1.5vw;
+  display:inline;
+  font-family: times;
+width:30%;
+}
+.upper-half-box-top1 {
+  width: 100%;
+  height: 42%;
+  background-color: $backgroundthree;
+  position: relative;
+  bottom: 1vw; }
+
+.lower-half-box-top1 {
+  clear:left;
+  width: 100%;
+  height: 58%;
+  position: relative;
+  bottom: 1vw; }
+
+.overall-box-top2 {
+  width: 60%;
+  margin-right: 1%;
+  background-color: $background-top;
+  font-size: 1vw;
+  color: $colupperheader;
+  font-family: Arial, sans-serif;
+  left: 1.5vw; 
+}
+.lower-half-box-top2 {
+  height: 79%;
+  width: 65%;
+  position: relative;
+  }
+.overall-box-top3 {
+  width: 19%;
+  float: left;
+  position: relative;
+}
+.upper-half-box-top3 {
+  width: 100%;
+  background-color: $backgroundtwo;
+  }
+
+.lower-half-box-top3 {
+  width: 100%;
+}
+
+.all-bottom {
+  display: flex;
+  flex-direction:row; 
+  flex-wrap:wrap;
+  height:30%;
+}
+.bottom-left {
+ width: 33%;
+left:0;
+}
+
+.bottom-middle {
+  width: 33%;
+  color: $textcolor1; 
+}
+
+ .bottom-right {
+  width: 33%;
+flex-direction:column;
+display:flex;
+position:relative;
+}
+
+.bottom-middle-sweatshirt{
+  height:40%;
+}
+
+.bottom-right-container1 {
+  color:$textcolor2;
+  width: 100%;
+  height: 50%;
+  background-color: $backgroundthree;
+  font-size: 1.0vw; 
+}
+
+.bottom-right-container2 {
+  font-size: 1.0vw;
+  width: 100%;
+  height: 50%;
+  }
+
+  .comment-form{
+@include button(pill);
+  }
+  .article-form{
+@include button(pill);
+  }
+
+/*# sourceMappingURL=test.css.map */
